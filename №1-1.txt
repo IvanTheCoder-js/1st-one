@@ -1,0 +1,38 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.Anim {
+  animation-name: Anim1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  position: relative;
+}
+
+.Spinner {
+  animation: Spin;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  width: 100px;
+  height: 100px;
+}
+
+@keyframes Spin {
+  10% {transform: rotate(0turn) scale(1);}
+  25% {transform: rotate(1turn) scale(1);}
+  50% {transform: rotate(1turn) scale(1.5);}
+  75% {transform: rotate(0turn) scale(0.5);}
+  100% {transform: rotate(0turn) scale(1);}
+}
+
+@keyframes Anim1 {
+  0% {background-color: lightblue; left: 0px; top: 0px;}
+  25% {background-color: lightgreen; left: 200px; top: 200px;}
+  50% {background-color: blue; left: 200px; top: 0px;}
+  75 {background-color: green; left: 0px; top: 200px;}
+  100% {background-color: darkblue; left: 0px; top: 0px;}
+}
